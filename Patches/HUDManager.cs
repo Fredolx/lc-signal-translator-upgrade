@@ -49,10 +49,9 @@ namespace SignalTranslatorUpgrade.Patches
     [HarmonyPatch(typeof(HUDManager), "DisplaySignalTranslatorMessage")]
     public class DisplaySignalTranslatorMessage
     {
-        private const int maxLength = 30;
         private static void Prefix(ref string signalMessage)
         {
-            signalMessage = Plugin.ClientMessage.Length < maxLength ? Plugin.ClientMessage : Plugin.ClientMessage.Substring(0, maxLength);
+            signalMessage = Plugin.ClientMessage.Length < Plugin.MaxCharacters.Value ? Plugin.ClientMessage : Plugin.ClientMessage.Substring(0, Plugin.MaxCharacters.Value);
             Plugin.Logger.LogInfo($"Display: {signalMessage}");
             Plugin.ClientMessage = null;
         }
