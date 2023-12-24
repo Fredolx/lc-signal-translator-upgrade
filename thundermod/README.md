@@ -3,4 +3,4 @@ BepInEx mod for Lethal Company to allow longer transmissions using the signal tr
 
 [Consider supporting me and my mods!](https://github.com/sponsors/Fredolx)
 
-![Showcase](http://github.com/fredolx/lc-signal-translator-upgrade/thundermod/showcase.png 'A very long message')
+![Showcase](https://raw.githubusercontent.com/Fredolx/lc-signal-translator-upgrade/main/thundermod/showcase.png 'A very long message')
